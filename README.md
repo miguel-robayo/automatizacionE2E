@@ -1,1 +1,0 @@
-# automatizacionE2E

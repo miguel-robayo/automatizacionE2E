@@ -1,0 +1,70 @@
+CONCLUSIONES
+
+  Se logro automatizar correctamente el flujo funcional de automatizacion API -Pet validando:
+
+    - Creacion de datos
+    - Persistencia
+    - Actualizacion
+    - Consulta por filtros
+
+  Durante la ejecucion se presentaron los siguientes hallazgos.:
+
+    - Uso incorrecto de endpoint "/pet/findPetsByStatus" - "/pet/findByStatus"
+    - Manejo de error HTTP - 404 y NumberFormatExeption cuando el backend intenta interpretar el path como ID,
+         es genera errores funcionales no claros
+
+  A nivel tecnico:
+
+    - Conflicto entre versiones Java (1.8 y 11/17)
+    - MVN usando JAVA_HOME incorrecto
+
+  Beneficios de usar Karate Framework:
+
+    - Facilidad de creacion y ejecucion de escenarios de pruebas
+    - No requiere librerias adicionales "RestAssured"
+    - Validacion de Json simple (match)
+    - uso de background para el baseUrl
+    - Separacion de runner y feature
+
+  Oportunidad de mejora
+
+    - Implementar validacion de Json schema
+    - Generacion de datos dinamico
+    - Integracion de CI/CD
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+CONCLUSIONS
+
+  The functional automation flow for the Pet API was successfully implemented, validating:
+
+    - Data creation
+    - Data persistence
+    - Data update
+    - Retrieval by filters
+
+  During execution, the following findings were identified:
+
+    - Incorrect use of the endpoint "/pet/findPetsByStatus" - "/pet/findByStatus"
+    - HTTP error handing issues - 404 errors and NumberFormatException when the backend attempts to interpret the path as
+    an ID, generating unclear functional error response
+
+  Technical level findings:
+
+    - Conflict between Java versions (1.8 and 11/17)
+    - Maven using an incorrect JAVA_HOME configuration
+
+  Benefits of using the Karate Framework
+
+    - Ease of creating and executing test scenarios
+    - no need for additional libraries such as RestAssured
+    - Simple JSON validation using match
+    - Use of Background for baseUrl configuration
+    - Clear separation between runner and feature files
+
+  Improvement opportunities
+
+    - Implementation JSON schema validation
+    - Generate dynamic test data
+    - Integrate with CI/CD pipelines

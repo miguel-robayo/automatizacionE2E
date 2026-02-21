@@ -1,0 +1,10 @@
+# automatitionE2E
+
+## Running the tests using Maven
+
+mvn clean verify -Dtest=runner
+
+after execution, the Serenity report will be available at:
+
+target/site/serenity/index.html
+
