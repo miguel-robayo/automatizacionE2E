@@ -1,4 +1,4 @@
-# automatitionAPI
+# automationAPI
 
 ## Running the tests using Maven
 

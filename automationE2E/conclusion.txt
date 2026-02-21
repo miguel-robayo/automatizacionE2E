@@ -1,0 +1,84 @@
+CONCLUSIONES
+
+ Se logro automatizar de forma exitosa flujo end-to-end de compra de productos de tecnologia garantizando cobertura
+ de happy path reduciendo riesgos en regresiones, abordando:
+
+      - seleccion de multiples productos
+      - Gestion de carrito de complas
+      - Proceso de compra
+      - Ingreso de informacion
+      - Validacion de mensaje de confirmacion
+
+ A nivel tecnico se detectaron los siguientes puntos:
+
+      - Manejo de identificadores Xpath para los elementos de la pagina, es necesario priorizar sobre By.id() para asi
+      mejorar la estabilidad y rendimiento
+      - No se detectan validaciones fuertes para completar la compra de los productos asi como los tipos de datos que
+      se pueden ingresar en cada caja de texto.
+
+ En cuanto a la arquitectura del framework se fortalecio en:
+
+     - La utilizacion de patron Screenplay
+     - Separacion de responsabilidades (page, task, question, stepdefinition)
+     - Parametrizacion de data desde el archivo .feature (List, DataTable)
+     - Mejoramiento en cuanto la mantenibilidad, legibilidad, reduccion de duplicidad
+
+ Oportunidad de mejora:
+
+     - Validacion de montos totales y cantidad
+     - Validaciones negativas (campos vacios, datos invalidos)
+     - Escenarios de error
+     - Validacion de ID generado al momento de terminar la compra
+     - Integracion con pipeline CI/CD
+     - Ejecucion por tags (regresion, smoke)
+
+ Errores presentados:
+
+     - Version de java y maven no actualizados
+     - Manejo de librerias en proyectos diferentes (E2E, API)
+     - Alerts generados por el navegador no controlados por la automatizacion (JavaScript)
+     - Generar llave SSH para subir codigo a repositorio github
+
+------------------------------------------------------------------------------------------------------------------------
+
+CONCLUSIONS
+
+  The end-to-end automation flow for purchasing technology products was successfully implemented, ensuring happy path
+   coverage and regression risks. The automation addressed:
+
+    - Selection of multiple products
+    - Shopping cart management
+    - Checkout process
+    - User information input
+    - Confirmation message validation
+
+  At a technical level, the following points were identified:
+
+    - Xpath locators were used to identify web elements. It is recommended to prioritize By.id() whenever possible in order
+    to improve stability and performance.
+    - Strong validation were not detected for completing the purchase process, particularly regarding required fields and
+    data types allowed in each input field.
+
+The framework architecture was strengthened through:
+
+    - Implementation of the Screemplay pattern
+    - Clear separation of responsibilities (Page, Task, Question, Step Definition)
+    - Data parameterization from the .feature file (List, DataTable)
+    - Improvements in maintainability, readability, and reduction of code duplication
+
+Improvement Opportunities
+
+    - Validation of total amounts and product quantities
+    - Negative validations (empty fields, invalid data)
+    - Error handling scenarios
+    - Validation of the generated purchase ID after completing the transaction
+    - CI/CD pipeline integration
+    - Execution by tags (regression, smoke)
+
+Issues Encountered
+
+    - Outdated Java and Maven versions
+    - Dependency management challenges across different projects (E2E and API)
+    - Browser alerts (JavaScript) not handled by the automation
+    - SSH key generation required to push code to the GitHub repository
+

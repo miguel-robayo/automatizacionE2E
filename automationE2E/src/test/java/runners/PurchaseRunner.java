@@ -9,5 +9,5 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "stepdefinitions"
 )
-public class runner {
+public class PurchaseRunner {
 }
