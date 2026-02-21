@@ -1,10 +1,9 @@
-# automatitionE2E
+# automatitionAPI
 
 ## Running the tests using Maven
 
-mvn clean verify -Dtest=runner
+mvn clean verify -Dtest=PetStoreRunner
 
 after execution, the Serenity report will be available at:
 
-target/site/serenity/index.html
-
+target/karate-reports/petStore.html 
